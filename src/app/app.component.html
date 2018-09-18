@@ -1,0 +1,69 @@
+<nav class="w3-sidebar w3-light-pink w3-bar-block w3-card w3-top w3-xlarge w3-animate-left w3-padding-64" style="display:none;width:40%;min-width:300px"
+  id="mySidebar">
+  <!-- <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button"> Close Menu</a> -->
+  <a routerLink="/"  href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i>
+    HOME</a>
+  <a routerLink="about"  href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button" ><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+    ABOUT</a>
+  <a routerLink="portfolio" href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button" >
+    <i class="fa fa-paint-brush"></i> PORTFOLIO</a>
+    <a routerLink="collection" href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button" >
+        <i class="fa fa-paint-brush"></i> COLLECTION</a>
+  <a routerLink="contact" href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button ">
+    <i class="fa fa-envelope"></i> CONTACT</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top" style="box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.19)">
+  <div class="w3-light-pink w3-xlarge" style="max-width:100%;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-button w3-padding-16 ">
+       <i class="fa fa-whatsapp w3-hover-opacity"></i>
+        <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
+    </div>
+  
+    <div class="w3-center w3-padding-16" >Fossetta Moda</div>
+  </div>
+</div>
+
+<!-- Navbar (sit on top) -->
+<!-- <div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a routerLink="/" class="w3-bar-item w3-button">HOME</a>
+    <a routerLink="about"  class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a routerLink="portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a routerLink="collection" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> COLLECTION</a>
+    <a routerLink="contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a  class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div> -->
+
+<!-- Navbar on small screens -->
+<!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a routerLink="about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a routerLink="portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a routerLink="contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a routerLink="" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div> -->
+
+<router-outlet></router-outlet>
+
+<!-- <footer class="w3-center w3-pink w3-padding-64 w3-opacity w3-hover-opacity-off"> -->
+    <footer class="w3-center w3-light-pink w3-padding-64 ">
+
+  <!-- <a href="#home" class="w3-button w3-light-grey">
+    <i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+  </div>
+</footer>

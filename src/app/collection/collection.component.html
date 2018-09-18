@@ -1,0 +1,22 @@
+<div style="padding-top:84px">
+
+  <div class="w3-row" style="padding-right:8px">
+    <div class="w3-col s6 m4 l3"  *ngFor="let item of items | async ">
+      <div (click)="showProduct(item)" class="w3-card-4 w3-hover-gray-s " style="margin-left:8px;margin-bottom:8px; box-shadow:0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.19)">
+        <img [src]="item.primaryImage" style="max-width:100%;max-height:90%">
+        <div class="w3-container w3-text-dark-blue-grey">
+            <p class="w3-small product-title">{{(item)?.name}}</p>
+
+          <p class="w3-small">  &#8377; {{(item)?.price}} </p>
+          <!-- <p class="w3-tiny">{{(item)?.description}}</p> -->
+
+        </div>
+        <div class="w3-bar" >
+            <!-- <button class="w3-bar-item  w3-left w3-tiny w3-button  w3-white w3-border w3-border-light-pink  w3-padding-small w3-block" style="width:48%;margin:1%">Order now</button> -->
+            <!-- <button class="w3-bar-item  w3-right w3-tiny w3-button  w3-white w3-border w3-border-light-pink w3-padding-small" style="width:48%;margin:1%">Add to cart</button> -->
+          </div>
+      </div>
+    </div>
+  </div>
+
+</div>

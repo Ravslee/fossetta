@@ -1,0 +1,18 @@
+{
+  "universal": {
+    "skipInstall": false,
+    "directory": ".",
+    "project": "fossetta"
+  },
+  "serverless": {
+    "provider": "firebase",
+    "firebaseProject": "fosseta-192915",
+    "skipInstall": false,
+    "directory": ".",
+    "project": "fossetta",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}

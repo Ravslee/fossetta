@@ -1,0 +1,7 @@
+.product-title {
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 154px; text-overflow: ellipsis;
+}
