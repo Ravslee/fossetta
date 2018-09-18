@@ -203,12 +203,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./about.component.css.shim.ngstyle */ "./src/app/about/about.component.css.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! ./about.component */ "./src/app/about/about.component.ts");
+var i3 = __webpack_require__(/*! ../seo.service */ "./src/app/seo.service.ts");
 var styles_AboutComponent = [i0.styles];
 var RenderType_AboutComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_AboutComponent, data: {} });
 exports.RenderType_AboutComponent = RenderType_AboutComponent;
 function View_AboutComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 36, "div", [["class", "w3-content w3-container w3-padding-64"], ["id", "about"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "h3", [["class", "w3-center"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["ABOUT ME"])), (_l()(), i1.ɵeld(3, 0, null, null, 2, "p", [["class", "w3-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "em", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["I love designing"])), (_l()(), i1.ɵeld(6, 0, null, null, 10, "div", [["class", "w3-row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 6, "div", [["class", "w3-col m6 w3-center w3-padding-large"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 3, "p", [], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 2, "b", [], null, null, null, null, null)), (_l()(), i1.ɵeld(10, 0, null, null, 0, "i", [["class", "fa fa-user w3-margin-right"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Dimple Arora"])), (_l()(), i1.ɵeld(12, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 0, "img", [["alt", "Photo of Me"], ["class", "w3-round w3-image "], ["height", "133"], ["src", "assets/imgs/author.png"], ["width", "200"]], null, null, null, null, null)), (_l()(), i1.ɵeld(14, 0, null, null, 2, "div", [["class", "w3-col m6  w3-padding-large"]], null, null, null, null, null)), (_l()(), i1.ɵeld(15, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\"A passionate Designer with Creative and Innovative vision; comes from a small town of Rajasthan named Kota. She had receveid her diploma course in fashion designing from Couture Institute of Fashion Techonology in Kota. Her aim is to change the concept of many Indians of looking great only by wearing heavy worked clothes, which is not true according to her , so she brings her vision of creating an unique , simple designs with details like ruffled,pleated,tucked and her designs are embellished with minimal hand or machine work or appliqu\u00E9 that can be worn by everyone. Her style is especially about feeling classy, elegant and sophisticated. She believes in her creation and can design the pallette for women to wear simple, comfortable yet stylish couture. She wants to innovate the power of dressing for women with her figure-loving designs. She also believes that dressing up occasionally and looking perfect is not only goes for women but for men and kids too. So, she also design menswear and kids wear in simple yet stylish and easy going comfortable design.\""])), (_l()(), i1.ɵeld(17, 0, null, null, 1, "p", [["class", "w3-large w3-center w3-padding-16"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Im really good at:"])), (_l()(), i1.ɵeld(19, 0, null, null, 2, "p", [["class", "w3-wide"]], null, null, null, null, null)), (_l()(), i1.ɵeld(20, 0, null, null, 0, "i", [["class", "fa fa-paint-brush"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Sketching"])), (_l()(), i1.ɵeld(22, 0, null, null, 2, "div", [["class", "w3-light-grey"]], null, null, null, null, null)), (_l()(), i1.ɵeld(23, 0, null, null, 1, "div", [["class", "w3-container w3-padding-small w3-pink w3-center"], ["style", "width:90%"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["90%"])), (_l()(), i1.ɵeld(25, 0, null, null, 2, "p", [["class", "w3-wide"]], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 0, "i", [["class", "fa fa-laptop"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Designing"])), (_l()(), i1.ɵeld(28, 0, null, null, 2, "div", [["class", "w3-light-grey"]], null, null, null, null, null)), (_l()(), i1.ɵeld(29, 0, null, null, 1, "div", [["class", "w3-container w3-padding-small w3-pink w3-center"], ["style", "width:85%"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["85%"])), (_l()(), i1.ɵeld(31, 0, null, null, 2, "p", [["class", "w3-wide"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 0, "i", [["class", "fa fa-photo"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Photoshop"])), (_l()(), i1.ɵeld(34, 0, null, null, 2, "div", [["class", "w3-light-grey"]], null, null, null, null, null)), (_l()(), i1.ɵeld(35, 0, null, null, 1, "div", [["class", "w3-container w3-padding-small w3-pink w3-center"], ["style", "width:75%"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["75%"])), (_l()(), i1.ɵeld(37, 0, null, null, 20, "div", [["class", "w3-row w3-center w3-white  w3-text-pink w3-padding-16"]], null, null, null, null, null)), (_l()(), i1.ɵeld(38, 0, null, null, 4, "div", [["class", "w3-quarter w3-section"]], null, null, null, null, null)), (_l()(), i1.ɵeld(39, 0, null, null, 1, "span", [["class", "w3-xlarge"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["14+"])), (_l()(), i1.ɵeld(41, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Partners "])), (_l()(), i1.ɵeld(43, 0, null, null, 4, "div", [["class", "w3-quarter w3-section"]], null, null, null, null, null)), (_l()(), i1.ɵeld(44, 0, null, null, 1, "span", [["class", "w3-xlarge"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["55+"])), (_l()(), i1.ɵeld(46, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Projects Done "])), (_l()(), i1.ɵeld(48, 0, null, null, 4, "div", [["class", "w3-quarter w3-section"]], null, null, null, null, null)), (_l()(), i1.ɵeld(49, 0, null, null, 1, "span", [["class", "w3-xlarge"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["89+"])), (_l()(), i1.ɵeld(51, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Happy Clients "])), (_l()(), i1.ɵeld(53, 0, null, null, 4, "div", [["class", "w3-quarter w3-section"]], null, null, null, null, null)), (_l()(), i1.ɵeld(54, 0, null, null, 1, "span", [["class", "w3-xlarge"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["150+"])), (_l()(), i1.ɵeld(56, 0, null, null, 0, "br", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Meetings "]))], null, null); }
 exports.View_AboutComponent_0 = View_AboutComponent_0;
-function View_AboutComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-about", [], null, null, null, View_AboutComponent_0, RenderType_AboutComponent)), i1.ɵdid(1, 114688, null, 0, i2.AboutComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_AboutComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-about", [], null, null, null, View_AboutComponent_0, RenderType_AboutComponent)), i1.ɵdid(1, 114688, null, 0, i2.AboutComponent, [i3.SeoService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_AboutComponent_Host_0 = View_AboutComponent_Host_0;
 var AboutComponentNgFactory = i1.ɵccf("app-about", i2.AboutComponent, View_AboutComponent_Host_0, {}, {}, []);
 exports.AboutComponentNgFactory = AboutComponentNgFactory;
@@ -227,10 +228,18 @@ exports.AboutComponentNgFactory = AboutComponentNgFactory;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var seo_service_1 = __webpack_require__(/*! ../seo.service */ "./src/app/seo.service.ts");
 var AboutComponent = /** @class */ (function () {
-    function AboutComponent() {
+    function AboutComponent(seo) {
+        this.seo = seo;
     }
     AboutComponent.prototype.ngOnInit = function () {
+        this.seo.generateTags({
+            title: 'About me',
+            description: 'About the designer ',
+            // image: 'https://instafire-app.firebaseapp.com/assets/meerkat.jpeg',
+            slug: 'about'
+        });
     };
     return AboutComponent;
 }());
@@ -1439,6 +1448,51 @@ exports.ProductService = ProductService;
 
 /***/ }),
 
+/***/ "./src/app/seo.service.ts":
+/*!********************************!*\
+  !*** ./src/app/seo.service.ts ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i0 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i1 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var SeoService = /** @class */ (function () {
+    function SeoService(meta) {
+        this.meta = meta;
+    }
+    SeoService.prototype.generateTags = function (config) {
+        // default values
+        // config = { 
+        //   title: 'Angular <3 Linkbots', 
+        //   description: 'My SEO friendly Angular Component', 
+        //   image: 'https://angularfirebase.com/images/logo.png',
+        //   slug: '',
+        // }
+        this.meta.updateTag({ name: 'twitter:card', content: 'summary' });
+        this.meta.updateTag({ name: 'twitter:site', content: '@fosseta' });
+        this.meta.updateTag({ name: 'twitter:title', content: config.title });
+        this.meta.updateTag({ name: 'twitter:description', content: config.description });
+        this.meta.updateTag({ name: 'twitter:image', content: config.image });
+        this.meta.updateTag({ property: 'og:type', content: 'article' });
+        this.meta.updateTag({ property: 'og:site_name', content: 'Fosseta' });
+        this.meta.updateTag({ property: 'og:title', content: config.title });
+        this.meta.updateTag({ property: 'og:description', content: config.description });
+        this.meta.updateTag({ property: 'og:image', content: config.image });
+        this.meta.updateTag({ property: 'og:url', content: "https://www.fossettamoda.ooo/" + config.slug });
+    };
+    SeoService.ngInjectableDef = i0.defineInjectable({ factory: function SeoService_Factory() { return new SeoService(i0.inject(i1.Meta)); }, token: SeoService, providedIn: "root" });
+    return SeoService;
+}());
+exports.SeoService = SeoService;
+
+
+/***/ }),
+
 /***/ "./src/environments/environment.ts":
 /*!*****************************************!*\
   !*** ./src/environments/environment.ts ***!
@@ -1499,7 +1553,7 @@ exports.LAZY_MODULE_MAP = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/sparkle/code/web/fossetta/src/main.server.ts */"./src/main.server.ts");
+module.exports = __webpack_require__(/*! /home/ravi/code/web/libs/fossetta/src/main.server.ts */"./src/main.server.ts");
 
 
 /***/ }),
