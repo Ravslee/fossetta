@@ -1319,13 +1319,14 @@ var i5 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i6 = __webpack_require__(/*! ./product.component */ "./src/app/product/product.component.ts");
 var i7 = __webpack_require__(/*! @angular/router */ "@angular/router");
 var i8 = __webpack_require__(/*! ../providers/product.service */ "./src/app/providers/product.service.ts");
+var i9 = __webpack_require__(/*! ../seo.service */ "./src/app/seo.service.ts");
 var styles_ProductComponent = [i0.styles];
 var RenderType_ProductComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_ProductComponent, data: {} });
 exports.RenderType_ProductComponent = RenderType_ProductComponent;
 function View_ProductComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 10, "div", [["class", "w3-row w3-container  "]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "div", [["class", "w3-col  l4 w3-center "]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 1, "slideshow", [["style", "min-width:340px;"]], null, null, null, i2.View_ɵa_0, i2.RenderType_ɵa)), i1.ɵdid(3, 311296, null, 0, i3.ɵa, [i3.ɵb, i1.Renderer2, i4.TransferState, i4.DomSanitizer, i1.PLATFORM_ID, i5.DOCUMENT], { imageUrls: [0, "imageUrls"], height: [1, "height"], minHeight: [2, "minHeight"], arrowSize: [3, "arrowSize"], showArrows: [4, "showArrows"], autoPlay: [5, "autoPlay"], autoPlayWaitForLazyLoad: [6, "autoPlayWaitForLazyLoad"], showDots: [7, "showDots"], lazyLoad: [8, "lazyLoad"] }, null), (_l()(), i1.ɵeld(4, 0, null, null, 6, "div", [["class", "w3-col l8  "]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 1, "h1", [["class", "w3-text-gray-x"]], null, null, null, null, null)), (_l()(), i1.ɵted(6, null, [" ", ""])), (_l()(), i1.ɵeld(7, 0, null, null, 1, "h1", [["class", "w3-text-gray-x w3-medium"]], null, null, null, null, null)), (_l()(), i1.ɵted(8, null, [" ", ""])), (_l()(), i1.ɵeld(9, 0, null, null, 1, "p", [["class", "w3-text-gray-v"]], null, null, null, null, null)), (_l()(), i1.ɵted(10, null, ["PRICE: ", " "]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _v.context.$implicit.images; var currVal_1 = _co.height; var currVal_2 = "580px"; var currVal_3 = "30px"; var currVal_4 = true; var currVal_5 = false; var currVal_6 = true; var currVal_7 = true; var currVal_8 = (((_v.context.$implicit.images == null) ? null : _v.context.$implicit.images.length) > 1); _ck(_v, 3, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8); }, function (_ck, _v) { var currVal_9 = ((_v.context.$implicit == null) ? null : _v.context.$implicit.name); _ck(_v, 6, 0, currVal_9); var currVal_10 = ((_v.context.$implicit == null) ? null : _v.context.$implicit.description); _ck(_v, 8, 0, currVal_10); var currVal_11 = ((_v.context.$implicit == null) ? null : _v.context.$implicit.price); _ck(_v, 10, 0, currVal_11); }); }
 function View_ProductComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["style", "padding-top:84px; "]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 2, null, View_ProductComponent_1)), i1.ɵdid(2, 16384, null, 0, i5.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), i1.ɵpid(131072, i5.AsyncPipe, [i1.ChangeDetectorRef]), (_l()(), i1.ɵeld(4, 0, null, null, 0, "br", [], null, null, null, null, null))], function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵunv(_v, 2, 0, i1.ɵnov(_v, 3).transform(_co.product)); _ck(_v, 2, 0, currVal_0); }, null); }
 exports.View_ProductComponent_0 = View_ProductComponent_0;
-function View_ProductComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-product", [], null, null, null, View_ProductComponent_0, RenderType_ProductComponent)), i1.ɵdid(1, 114688, null, 0, i6.ProductComponent, [i7.ActivatedRoute, i8.ProductService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_ProductComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-product", [], null, null, null, View_ProductComponent_0, RenderType_ProductComponent)), i1.ɵdid(1, 114688, null, 0, i6.ProductComponent, [i7.ActivatedRoute, i8.ProductService, i9.SeoService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_ProductComponent_Host_0 = View_ProductComponent_Host_0;
 var ProductComponentNgFactory = i1.ɵccf("app-product", i6.ProductComponent, View_ProductComponent_Host_0, {}, {}, []);
 exports.ProductComponentNgFactory = ProductComponentNgFactory;
@@ -1346,10 +1347,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
 var product_service_1 = __webpack_require__(/*! ../providers/product.service */ "./src/app/providers/product.service.ts");
+var seo_service_1 = __webpack_require__(/*! ../seo.service */ "./src/app/seo.service.ts");
 var ProductComponent = /** @class */ (function () {
-    function ProductComponent(route, productService) {
+    function ProductComponent(route, productService, seo) {
         this.route = route;
         this.productService = productService;
+        this.seo = seo;
     }
     ProductComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1357,6 +1360,14 @@ var ProductComponent = /** @class */ (function () {
             _this.id = params['id'];
             console.log(_this.id);
             _this.product = _this.productService.getProductById(_this.id);
+            _this.product.subscribe(function (item) {
+                _this.seo.generateTags({
+                    title: item.name,
+                    description: item.description,
+                    image: item.primaryImage,
+                    slug: 'collection/product/' + item.id
+                });
+            });
         });
     };
     ProductComponent.prototype.addQuantity = function () {
