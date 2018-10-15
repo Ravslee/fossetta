@@ -2,7 +2,10 @@ import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { MaterialModule } from './material/material.module'
+
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
@@ -10,10 +13,13 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
+import { ShareButtonsModule } from '@ngx-share/buttons';
 
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+
 import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
@@ -33,6 +39,8 @@ import { ProductService } from './providers/product.service'
 
 //Thrid party libs
 import { SlideshowModule } from 'ng-simple-slideshow';
+import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 
 
 
@@ -48,20 +56,28 @@ import { SlideshowModule } from 'ng-simple-slideshow';
     LoginComponent,
     DashboardComponent,
     AddItemComponent,
-    UpdateItemComponent
+    UpdateItemComponent,
+    FooterComponent
   ],
-  imports:[
- CommonModule,
-NgtUniversalModule,
- 
+  imports: [
+    CommonModule,
+    BrowserModule,
+    NgtUniversalModule,
     CommonModule,
     AppRoutingModule,
     FormsModule,
     SlideshowModule,
     AngularFireModule.initializeApp(environment.firebase),
+    LoadingBarRouterModule,
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
+    HttpClientModule,       // (Required) For share counts
+    HttpClientJsonpModule,  // (Optional) Add if you want tumblr share counts
+    ShareButtonsModule.forRoot(),
+    BrowserAnimationsModule,
+    MaterialModule
+
   ],
   providers: [ProductService],
 })

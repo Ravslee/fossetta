@@ -13,6 +13,7 @@ export class ProductComponent implements OnInit {
 
   public product: any;
   public id: string;
+  public backgroundSize= "100% 100%";
 
   constructor(public route: ActivatedRoute,
     public productService: ProductService,

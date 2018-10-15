@@ -1,49 +1,46 @@
-<div  class="w3-padding-64  ">
+<div class="w3-padding-64  ">
 
     <!-- <div class="w3-panel w3-black w3-round-large">
         <p >Create New Item</p>
       </div> -->
     <div class="w3-container " style="margin-top:34px">
-       
-      <div class="w3-row">
-          <div class="w3-half w3-container ">
-              <label>Item Name</label>
-              <input class="w3-input w3-border" [(ngModel)]="product.name" type="text">
-              <br>
-              <label>Item Details</label>
-              <input class="w3-input w3-border" type="text" [(ngModel)]="product.description" rows="6">
-              <br>
-              <label>Price</label>
-              <input class="w3-input w3-border" type="text" [(ngModel)]="product.price" rows="6">
-          </div>
-        <div class="w3-half w3-container ">
-           
-                <hr>
+        <input id="pickImage" class="w3-input w3-black" type='file' [hidden]='true' (change)="onSelectFile($event)" multiple>
 
-            Primary photo:
-                <input class="w3-input w3-black" type='file' (change)="onSelectFile1($event)">
-                <img [src]="url" *ngIf="url" height="128"> <br/> <br/>
+        <!-- <button class="w3-btn  w3-black" onClick="document.getElementById('pickImage').click()">Add Images</button> -->
+        <div class="w3-row">
 
+            <div class="w3-col s6 m4 l3 w3-border" *ngFor="let url of localUrls; let i=index">
+                <img class="w3-round " [src]="url" style="display: block;width: 100%;">
+                <div style="margin: 4px">
+                    <!-- <mat-checkbox>Set display image</mat-checkbox> -->
+                    <button (click)="removeImage(i)" class="w3-button-small w3-black w3-round-small"> remove</button>
+                </div>
 
-            <hr>
-            Others:
-            <input class="w3-input w3-black" type='file' (change)="onSelectFile2($event)">
-            <hr>
-            <input class="w3-input w3-black" type='file' (change)="onSelectFile3($event)">
-            <hr>
-            <input class="w3-input w3-black" type='file' (change)="onSelectFile4($event)">
-            <hr>
+            </div>
 
-            <img  [src]="url2" *ngIf="url2" height="128"> <br/> <br/>
-            <img [src]="url3" *ngIf="url3" height="128"> <br/> <br/>
-            <img [src]="url4" *ngIf="url4" height="128"> <br/> <br/>
         </div>
-          
-      </div>
-       
-        <br> <br>
-        <button class="w3-btn w3-block w3-black" (click)="addProduct()">Add Item</button>
 
-        
+        <mat-spinner style="position: fixed" *ngIf="uploading" class="w3-display-middle"   ></mat-spinner>
+
+        <button style="margin-top:34px" class="w3-button w3-black w3-round-xxlarge " onClick="document.getElementById('pickImage').click()">Add Images </button>
+
+        <div class="w3-row" style="margin-top:34px">
+            <div>
+                <label>Item Name</label>
+                <input class="w3-input w3-border" [(ngModel)]="product.name" type="text">
+                <br>
+                <label>Item Details</label>
+                <input class="w3-input w3-border" type="text" [(ngModel)]="product.description" rows="6">
+                <br>
+                <label>Price</label>
+                <input class="w3-input w3-border" type="text" [(ngModel)]="product.price" rows="6">
+            </div>
+
+
+            <div style="margin-top: 32px">
+                <button class="w3-btn w3-block w3-black " (click)="addProduct()">Add Item</button>
+            </div>
+        </div>
+
     </div>
 </div>

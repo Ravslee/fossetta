@@ -5,6 +5,7 @@ import { finalize } from 'rxjs/operators';
 
 import { Observable } from 'rxjs';
 import { Product } from '../models/product';
+
 @Injectable()
 export class ProductService {
 
@@ -25,7 +26,6 @@ export class ProductService {
       console.dir(res.id)
       item.id = res.id;
       this.updateBlog(item);
-      console.log("product added successfully!"+res)
     });
   }
 
@@ -55,8 +55,8 @@ export class ProductService {
      .valueChanges();
    }
 
-   public uploadFile(event) {
-    const file = event.target.files[0];
+   public uploadFile(file) {
+    // const file = event.target.files[0];
     const filePath = "fosseta/images/"+ new Date().getMilliseconds();
     const fileRef = this.storage.ref(filePath);
     const task = this.storage.upload(filePath, file);

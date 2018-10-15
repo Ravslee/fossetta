@@ -1,27 +1,26 @@
-<div style="padding-top:84px; ">
+<div style="padding-top:80px; ">
 
-  <div class="w3-row w3-container  " *ngIf="product | async; let data">
+  <div class="w3-row   " *ngIf="product | async; let data">
 
-    <div class="w3-col  l4 w3-center " >
-        <!-- <img [src]="(data)?.primaryImage " style="max-height:580px; max-width:340px" /> -->
-        <slideshow [height]="height" style="min-width:340px;"
-        [minHeight]="'580px'"
-        [arrowSize]="'30px'"
-        [autoPlay]="false"
-        [showArrows]="true"
-        [showDots]="true"
-        [imageUrls]="data.images"
-        [lazyLoad]="(data.images)?.length > 1"
-        [autoPlayWaitForLazyLoad]="true">
-    </slideshow>
+    <div class="w3-col  l4 w3-center ">
+      <!-- <img [src]="(data)?.primaryImage " style="max-height:580px; max-width:340px" /> -->
+      <slideshow [height]="height" style="width: 154px" [minHeight]="'580px'" [arrowSize]="'20px'" [autoPlay]="false" [backgroundSize]="backgroundSize"
+        [showArrows]="false" [showDots]="true" [imageUrls]="data.images" [lazyLoad]="(data.images)?.length > 1" [autoPlayWaitForLazyLoad]="true">
+      </slideshow>
     </div>
-    <div class="w3-col l8  ">
-        <h1 class="w3-text-gray-x"> {{(data)?.name}}</h1>
-        <h1 class="w3-text-gray-x w3-medium"> {{(data)?.description}}</h1>
+    <div class="w3-col l8 " style="padding: 16px">
+      <h1 class="w3-text-gray-x"> {{(data)?.name}}</h1>
+      <h1 class="w3-text-gray-x w3-medium"> {{(data)?.description}}</h1>
 
-        <p class="w3-text-gray-v">PRICE: {{(data)?.price}} </p>
+      <p class="w3-text-gray-v">
+        <i class="fa fa-inr"></i> &nbsp; {{(data)?.price}} </p>
 
-        <!-- <p>Quantities: {{quantity}}</p>
+      <button type="button" class="btn w3-hover-opacity" style="background-color: #25D366; color: #ffffff">
+        <i class="fa fa-whatsapp "></i>
+
+        WhatsApp Us</button>
+     
+      <!-- <p>Quantities: {{quantity}}</p>
 
         <div class="w3-bar">
           <button (click)="deleteQuantity()" class="w3-button w3-light-pink">-</button>
@@ -33,8 +32,14 @@
 
 
     </div>
-
+    <share-buttons [theme]="'circles-dark'"
+    [include]="['facebook','twitter','google','linkedin','whatsapp','messenger','telegram']"
+    [show]="7"
+    [size]="4"
+    [autoSetMeta]="false"
+   ></share-buttons>
   </div>
 
   <br>
 </div>
+<app-footer *ngIf="product"> </app-footer>
